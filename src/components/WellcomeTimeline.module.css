@@ -1,0 +1,785 @@
+@font-face {
+  font-family: 'Cormorant Garamond Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300 700;
+  src: url('../assets/fonts/cormorant-garamond-latin-ext-wght-normal.woff2')
+      format('woff2-variations'),
+    url('https://monet-letters-dev.ch.digirati.io/assets/cormorant-garamond-latin-ext-wght-normal.woff2')
+      format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308,
+    U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113,
+    U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Cormorant Garamond Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300 700;
+  src: url('../assets/fonts/cormorant-garamond-latin-wght-normal.woff2') format('woff2-variations'),
+    url('https://monet-letters-dev.ch.digirati.io/assets/cormorant-garamond-latin-wght-normal.woff2')
+      format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304,
+    U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Cormorant Garamond Variable';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 300 700;
+  src: url('../assets/fonts/cormorant-garamond-latin-ext-wght-italic.woff2')
+      format('woff2-variations'),
+    url('https://monet-letters-dev.ch.digirati.io/assets/cormorant-garamond-latin-ext-wght-italic.woff2')
+      format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308,
+    U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113,
+    U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Cormorant Garamond Variable';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 300 700;
+  src: url('../assets/fonts/cormorant-garamond-latin-wght-italic.woff2') format('woff2-variations'),
+    url('https://monet-letters-dev.ch.digirati.io/assets/cormorant-garamond-latin-wght-italic.woff2')
+      format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304,
+    U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Work Sans Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url('../assets/fonts/work-sans-latin-ext-wght-normal.woff2') format('woff2-variations'),
+    url('https://monet-letters-dev.ch.digirati.io/assets/work-sans-latin-ext-wght-normal.woff2')
+      format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308,
+    U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113,
+    U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Work Sans Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url('../assets/fonts/work-sans-latin-wght-normal.woff2') format('woff2-variations'),
+    url('https://monet-letters-dev.ch.digirati.io/assets/work-sans-latin-wght-normal.woff2')
+      format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304,
+    U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Work Sans Variable';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url('../assets/fonts/work-sans-latin-ext-wght-italic.woff2') format('woff2-variations'),
+    url('https://monet-letters-dev.ch.digirati.io/assets/work-sans-latin-ext-wght-italic.woff2')
+      format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308,
+    U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113,
+    U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Work Sans Variable';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url('../assets/fonts/work-sans-latin-wght-italic.woff2') format('woff2-variations'),
+    url('https://monet-letters-dev.ch.digirati.io/assets/work-sans-latin-wght-italic.woff2')
+      format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304,
+    U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+.timelineRoot {
+  --font-sans: 'Work Sans Variable', 'Work Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Cormorant Garamond Variable', 'Cormorant Garamond', ui-serif, Georgia, serif;
+  --color-monet-page: #fefbf4;
+  --color-monet-section: #f6f3ec;
+  --color-monet-panel: #ebe4db;
+  --color-monet-card: #ffffff;
+  --color-monet-link: #19599a;
+  --color-monet-logo: #83a3c4;
+  --color-monet-text: #1c1c1e;
+  --color-monet-text-secondary: #606060;
+  --color-monet-deep-blue: #124574;
+  --color-monet-soft-blue: #83a3c4;
+  --color-monet-pale-blue: #e8eff5;
+  --color-monet-border: #d8cfc3;
+  --color-monet-control-border: #918477;
+
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 650px;
+  background-color: var(--color-monet-page);
+  color: var(--color-monet-text);
+  font-family: var(--font-sans);
+  font-size: 12px;
+  line-height: 1.4;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.fullScreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: 9999;
+}
+
+/* Header Panel */
+.headerPanel {
+  background: var(--color-monet-section);
+  height: 50px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  box-sizing: border-box;
+  border-bottom: 1px solid var(--color-monet-border);
+}
+
+.headerTitle {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--color-monet-link);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 16px;
+  letter-spacing: -0.01em;
+}
+
+.headerDateSpan {
+  font-family: var(--font-serif);
+  color: var(--color-monet-text);
+  font-weight: 400;
+}
+
+.headerControls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.zoomBtn {
+  width: 34px;
+  height: 34px;
+  background: var(--color-monet-panel);
+  color: var(--color-monet-text);
+  border: 1px solid var(--color-monet-border);
+  border-radius: 9999px;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.15s ease, border-color 0.15s ease, background-color 0.15s ease,
+    opacity 0.2s ease;
+}
+
+.zoomBtn:hover:not(:disabled) {
+  color: var(--color-monet-link);
+  border-color: var(--color-monet-link);
+  background: var(--color-monet-card);
+}
+
+.zoomBtn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Main Panel */
+.mainPanel {
+  position: relative;
+  flex: 1;
+  background: radial-gradient(
+    ellipse at center,
+    var(--color-monet-page) 0%,
+    var(--color-monet-section) 72%,
+    #efe9df 100%
+  );
+  overflow: hidden;
+}
+
+.scrollViewport {
+  position: relative;
+  margin: 0 20px;
+  height: 500px;
+  overflow: hidden;
+  cursor: grab;
+  touch-action: pan-y;
+}
+
+.scrollViewportDragging {
+  cursor: grabbing;
+}
+
+.scrollContent {
+  position: relative;
+  height: 100%;
+  will-change: transform, width;
+  transition: width 0.45s cubic-bezier(0.65, 0, 0.35, 1),
+    transform 0.45s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.scrollContentImmediate {
+  transition: none !important;
+}
+
+/* Background Events */
+.backgroundEvents {
+  position: relative;
+  height: 30px;
+  width: 100%;
+}
+
+.backgroundEvent {
+  position: absolute;
+  top: 10px;
+  color: var(--color-monet-text-secondary);
+  font-size: 11px;
+  overflow: hidden;
+}
+
+.backgroundEventTitle {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--color-monet-text-secondary);
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
+.backgroundEventSpan {
+  border-top: 2px solid var(--color-monet-control-border);
+  border-left: 2px solid var(--color-monet-control-border);
+  border-right: 2px solid var(--color-monet-control-border);
+  height: 5px;
+  margin-top: 1px;
+}
+
+/* Events Canvas */
+.eventsLayer {
+  position: relative;
+  height: 350px;
+  width: 100%;
+  z-index: 1;
+}
+
+.eventCard {
+  position: absolute;
+  background: var(--color-monet-card);
+  color: var(--color-monet-text);
+  margin: 25px 20px 0 1px;
+  cursor: pointer;
+  height: 76px;
+  width: 206px;
+  border: 1px solid var(--color-monet-border);
+  border-left: 2px solid var(--color-monet-link);
+  box-shadow: 0 2px 6px rgba(28, 28, 30, 0.06);
+  box-sizing: border-box;
+  transition: opacity 0.25s ease, background-color 0.15s ease, border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.eventCardMin {
+  width: 136px;
+}
+
+.eventCardSelected,
+.eventCardHighlighted {
+  background: var(--color-monet-deep-blue);
+  border-color: var(--color-monet-deep-blue);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(18, 69, 116, 0.25);
+}
+
+.eventCardPresent {
+  background: var(--color-monet-panel);
+  border-color: var(--color-monet-control-border);
+  border-left: 2px solid var(--color-monet-deep-blue);
+  cursor: default;
+  height: 35px;
+  margin-top: 65px;
+  width: 136px;
+}
+
+.eventWrap {
+  width: 200px;
+  height: 70px;
+  margin: 2px;
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.eventCardMin .eventWrap {
+  width: 130px;
+}
+
+.eventCardPresent .eventWrap {
+  border: none;
+  margin: 0;
+  padding: 2px 6px;
+  height: 31px;
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.eventLeftCol {
+  width: 70px;
+  height: 70px;
+  background: var(--color-monet-panel);
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.eventLeftCol img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  display: block;
+}
+
+.eventRightCol {
+  flex: 1;
+  margin: 0 5px;
+  overflow: hidden;
+}
+
+.eventDate {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 12px;
+  color: var(--color-monet-link);
+  margin: 1px 0 2px 0;
+}
+
+.eventTitle {
+  font-family: var(--font-serif);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 13.5px;
+  color: var(--color-monet-text);
+}
+
+.eventCardSelected .eventDate,
+.eventCardHighlighted .eventDate {
+  color: var(--color-monet-pale-blue);
+}
+
+.eventCardSelected .eventTitle,
+.eventCardHighlighted .eventTitle {
+  color: #ffffff;
+}
+
+.eventCardPresent .eventTitle {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--color-monet-text);
+}
+
+.eventCornerArrow {
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+  width: 12px;
+  height: 12px;
+  pointer-events: none;
+}
+
+.eventStemArrow {
+  width: 11px;
+  height: 11px;
+  position: relative;
+  left: -2px;
+}
+
+.eventStemLine {
+  width: 2px;
+  background: var(--color-monet-soft-blue);
+  position: relative;
+  left: -2px;
+}
+
+.eventCardSelected .eventStemLine,
+.eventCardHighlighted .eventStemLine {
+  background: var(--color-monet-deep-blue);
+}
+
+/* Time / Ticks Axis */
+.timeLayer {
+  height: 120px;
+  white-space: nowrap;
+  position: relative;
+}
+
+.ticksRow {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.tick {
+  border-top: 4px solid var(--color-monet-link);
+  color: var(--color-monet-link);
+  display: inline-block;
+  margin: 6px 0 0 2px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.tickDate {
+  margin: 4px 0 3px 0;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--color-monet-link);
+}
+
+.tickEvents {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 58px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-monet-border) transparent;
+}
+
+.tickEvent {
+  background: var(--color-monet-border);
+  margin: 2px;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  flex-shrink: 0;
+  border: none;
+  padding: 0;
+  transition: background-color 0.15s ease, transform 0.1s ease;
+}
+
+.tickEventAvailable {
+  background: var(--color-monet-deep-blue);
+}
+
+.tickEventHidden {
+  background: var(--color-monet-border);
+}
+
+.tickEventSelected,
+.tickEventHighlighted {
+  background: var(--color-monet-link) !important;
+  box-shadow: 0 0 0 1.5px var(--color-monet-page), 0 0 0 3px var(--color-monet-deep-blue);
+}
+
+/* Details View Modal Overlay */
+.detailsOverlay {
+  position: absolute;
+  left: 50%;
+  bottom: 48px;
+  transform: translateX(-50%);
+  width: calc(100% - 36px);
+  max-width: 950px;
+  height: 280px;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+}
+
+.dialogueTop {
+  width: 100%;
+  height: 24px;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2px;
+}
+
+.closeBtn {
+  height: 24px;
+  margin-right: 43px;
+  background: transparent;
+  border: none;
+  color: var(--color-monet-text);
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0;
+}
+
+.closeBtn:hover {
+  color: var(--color-monet-link);
+}
+
+.closeBtnIcon {
+  width: 24px;
+  height: 24px;
+  background: var(--color-monet-deep-blue);
+  color: #ffffff;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detailsMiddle {
+  display: flex;
+  height: 256px;
+  width: 100%;
+  align-items: center;
+}
+
+.navCol {
+  width: 43px;
+  height: 256px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.prevNextBtn {
+  width: 43px;
+  height: 83px;
+  background: var(--color-monet-deep-blue);
+  border: 1px solid var(--color-monet-deep-blue);
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: background-color 0.15s ease;
+}
+
+.prevNextBtn:hover:not(:disabled) {
+  background: var(--color-monet-link);
+  border-color: var(--color-monet-link);
+}
+
+.prevNextBtn:disabled {
+  background: var(--color-monet-panel);
+  border-color: var(--color-monet-border);
+  color: var(--color-monet-control-border);
+  cursor: not-allowed;
+}
+
+.detailsCenterCol {
+  flex: 1;
+  height: 256px;
+  background: var(--color-monet-card);
+  border: 1px solid var(--color-monet-border);
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(28, 28, 30, 0.1);
+  display: flex;
+  padding: 18px;
+  box-sizing: border-box;
+  overflow: hidden;
+  gap: 18px;
+}
+
+.detailsImageCol {
+  width: 220px;
+  height: 220px;
+  flex-shrink: 0;
+  border: 1px solid var(--color-monet-border);
+  border-radius: 4px;
+  background: var(--color-monet-panel);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.detailsImageCol img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.detailsTextCol {
+  flex: 1;
+  height: 220px;
+  overflow-y: auto;
+  padding-right: 12px;
+  color: var(--color-monet-text);
+  font-family: var(--font-sans);
+  font-size: 13.5px;
+  line-height: 1.55;
+}
+
+.detailsHeader {
+  border-bottom: 1px solid var(--color-monet-border);
+  padding: 0 0 8px 0;
+  margin: 0 0 10px 0;
+}
+
+.detailsHeader h1 {
+  font-family: var(--font-serif);
+  color: var(--color-monet-link);
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 28px;
+  margin: 0;
+}
+
+.detailsHeader h2 {
+  font-family: var(--font-serif);
+  color: var(--color-monet-text);
+  font-weight: 500;
+  font-size: 17px;
+  margin: 4px 0 0 0;
+}
+
+.detailsBody a {
+  color: var(--color-monet-link);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 2px;
+}
+
+.detailsBody a:hover {
+  color: var(--color-monet-deep-blue);
+}
+
+/* Footer Panel */
+.footerPanel {
+  background: var(--color-monet-section);
+  border-top: 1px solid var(--color-monet-border);
+  height: 41px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+.footerBtn {
+  background: transparent;
+  border: none;
+  color: var(--color-monet-text);
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 6px;
+  transition: color 0.15s ease;
+}
+
+.footerBtn:hover {
+  color: var(--color-monet-link);
+}
+
+/* Embed Overlay */
+.overlayMask {
+  position: absolute;
+  inset: 0;
+  background: rgba(28, 28, 30, 0.35);
+  z-index: 30;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+}
+
+.embedModal {
+  width: 470px;
+  background: var(--color-monet-card);
+  color: var(--color-monet-text);
+  border: 1px solid var(--color-monet-border);
+  border-radius: 8px;
+  padding: 18px;
+  box-shadow: 0 12px 32px rgba(28, 28, 30, 0.18);
+  position: relative;
+  font-family: var(--font-sans);
+}
+
+.embedModal h1 {
+  font-family: var(--font-serif);
+  color: var(--color-monet-link);
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--color-monet-border);
+}
+
+.embedTextarea {
+  width: 100%;
+  height: 90px;
+  background: var(--color-monet-section);
+  color: var(--color-monet-text);
+  border: 1px solid var(--color-monet-border);
+  border-radius: 4px;
+  font-size: 11px;
+  font-family: monospace;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.embedSizes {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.embedSizeOption {
+  border: 1px solid var(--color-monet-border);
+  border-radius: 9999px;
+  padding: 6px 14px;
+  cursor: pointer;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 600;
+  text-align: center;
+  background: var(--color-monet-card);
+  color: var(--color-monet-text);
+}
+
+.embedSizeSelected {
+  border-color: var(--color-monet-link);
+  background: var(--color-monet-pale-blue);
+  color: var(--color-monet-link);
+}

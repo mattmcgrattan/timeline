@@ -1,0 +1,46 @@
+{
+  "name": "wellcome-timeline",
+  "version": "2.0.0",
+  "private": false,
+  "description": "Modern React + TypeScript rewrite of the Wellcome Timeline component",
+  "type": "module",
+  "main": "./dist/wellcome-timeline.umd.cjs",
+  "module": "./dist/wellcome-timeline.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/wellcome-timeline.js",
+      "require": "./dist/wellcome-timeline.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite --port 8003",
+    "build": "tsc -b && vite build && vite build --mode lib && touch docs/.nojekyll",
+    "build:pages": "tsc -b && vite build && touch docs/.nojekyll",
+    "build:lib": "tsc -b && vite build --mode lib",
+    "preview": "vite preview --outDir docs --port 8003",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint src --ext .ts,.tsx",
+    "format": "prettier --write \"src/**/*.{ts,tsx,css}\""
+  },
+  "dependencies": {
+    "date-fns": "^3.6.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^7.13.0",
+    "@typescript-eslint/parser": "^7.13.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "jsdom": "^24.1.0",
+    "prettier": "^3.3.2",
+    "typescript": "^5.4.5",
+    "vite": "^5.3.1",
+    "vitest": "^1.6.0"
+  }
+}

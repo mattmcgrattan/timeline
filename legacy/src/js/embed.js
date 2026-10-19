@@ -1,4 +1,4 @@
-﻿
+
 (function (window, document, version, callback) {
 
     // only run this script once per page.
@@ -40,15 +40,19 @@
 
     $.support.cors = true;
 
-    // get the scriptUri domain.
+    // get the scriptUri domain and base path.
     var a = document.createElement('a');
     a.href = scriptUri;
     var domain = a.hostname;
     var protocol = a.protocol;
-    var port = (a.port == 80 ? '' : ':' + a.port);
+    var port = ((a.port == 80 || a.port == 443 || a.port == '') ? '' : ':' + a.port);
+    var basePath = a.pathname.replace(/(?:\/)?(?:js|build)\/embed(?:\.min)?\.js.*$/i, '');
+    if (basePath && basePath.charAt(0) !== '/') {
+        basePath = '/' + basePath;
+    }
 
-    $.when($.getScript('//' + domain + port + '/js/libs/easyXDM.min.js'),
-        $.getScript('//' + domain + port + '/js/libs/json2.min.js')).done(function () {
+    $.when($.getScript('//' + domain + port + basePath + '/js/libs/easyXDM.min.js'),
+        $.getScript('//' + domain + port + basePath + '/js/libs/json2.min.js')).done(function () {
 
             var timelines = $('.timeline');
 
@@ -151,7 +155,7 @@
 
         function createSocket() {
 
-            var uri = protocol + "//" + domain + port + "/timeline.html?" +
+            var uri = protocol + "//" + domain + port + basePath + "/timeline.html?" +
                 "isHomeDomain=" + isHomeDomain +
                 "&isOnlyInstance=" + isOnlyInstance +
                 "&dataUri=" + dataUri +
